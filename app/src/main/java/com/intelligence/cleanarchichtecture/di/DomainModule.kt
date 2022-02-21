@@ -7,7 +7,7 @@ import org.koin.dsl.module
 
 val domainModule = module {
 
-    factory<SaveUserNameUseCase> { SaveUserNameUseCase(repository = get()) }
+    factory { SaveUserNameUseCase(repository = get()) }
 
-    factory<GetUserNameUseCase> { GetUserNameUseCase(repository = get()) }
+    factory { GetUserNameUseCase(repository = get()) }
 }

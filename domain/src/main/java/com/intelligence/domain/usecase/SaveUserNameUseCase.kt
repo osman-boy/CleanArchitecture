@@ -11,6 +11,5 @@ class SaveUserNameUseCase(private val repository: UserRepository) {
     operator fun invoke(user: UserDomain): Boolean{
         return repository.saveUser(user)
 
-
     }
 }
